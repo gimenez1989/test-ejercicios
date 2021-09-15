@@ -5,7 +5,11 @@ function App() {
   const [inputText, setInputText] = useState ("")
  
   const change = (e) => {
-    setInputText(e.target.value)
+    
+    if( e.target.value.length < 5) {
+    setInputText(e.target.value) 
+    }
+     
   }
  
   return (
